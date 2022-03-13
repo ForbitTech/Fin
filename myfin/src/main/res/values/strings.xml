@@ -1,0 +1,50 @@
+<resources>
+
+<!--    TEST-->
+    <string name="app_id_n">ca-app-pub-5474497946967422~4608513322</string>
+<!--    <string name="banner_ad_unit">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="inter_ad_unit">ca-app-pub-3940256099942544/1033173712</string>-->
+
+<!--    ORIGINAL-->
+    <string name="banner_ad_unit">ca-app-pub-5474497946967422/3125709569</string>
+    <string name="inter_ad_unit">ca-app-pub-5474497946967422/7151943856</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="overview">Overview</string>
+    <string name="general_info"><u>General Info</u></string>
+    <string name="balance_in_cash">Balance in Cash</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="total_income">Total Income</string>
+    <string name="number_of_accounts">Number of Accounts</string>
+    <string name="number_of_transactions">Number of Transactions</string>
+    <string name="accounts_count">Accounts Count</string>
+    <string name="transactions_count">Transactions Count</string>
+    <string name="actions">Actions</string>
+    <string name="create_account">create account</string>
+    <string name="accounts">Accounts</string>
+    <string name="transactions">Transactions</string>
+    <string name="fill_up_account_info">Please Fill up the following info</string>
+
+    <string name="create">Create</string>
+    <string name="back">back</string>
+    <string name="create_new_transaction">Create New Transaction</string>
+    <string name="fill_up_transaction_info">Fill up following fields to add transaction</string>
+    <string name="transaction_from">Transaction From</string>
+    <string name="select_transaction_attachment">Select Transaction Attachment</string>
+    <string name="transaction_to">Transaction To</string>
+    <string name="account_type">Account Type</string>
+    <string name="opening_balance">Opening Balance</string>
+    <string name="update_account">Update Account</string>
+    <string name="update_transaction">Update Transactions</string>
+    <string name="out">Out</string>
+    <string name="in">In</string>
+    <string name="trial_balance">Trial Balance</string>
+    <string name="monthly_report">Monthly Report</string>
+    <string name="daily_transactions">Daily Transactions</string>
+    <string name="daily_report">Daily Report</string>
+    <string name="top_ten">Top Ten</string>
+    <string name="latest_ten">Latest Ten</string>
+
+
+</resources>

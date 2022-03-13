@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MyMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="BlackCursorSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@android:color/secondary_text_dark</item>
+        <item name="android:editTextColor">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="ProjectIcon">
+        <item name="android:contentDescription">@string/update</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/ripple</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="HideContainerStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyCard" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+    <style name="MyCard.TopLeft" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners.TopLeft</item>
+    </style>
+
+    <style name="MyCard.TopRight" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners.TopRight</item>
+    </style>
+
+    <style name="MyCard.BottomLeft" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners.BottomLeft</item>
+    </style>
+
+    <style name="MyCard.BottomRight" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners.BottomRight</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners.TopRight" parent="ShapeAppearanceOverlay_card_custom_corners">
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners.TopLeft" parent="ShapeAppearanceOverlay_card_custom_corners">
+        <item name="cornerSizeTopLeft">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners.BottomRight" parent="ShapeAppearanceOverlay_card_custom_corners">
+        <item name="cornerSizeBottomRight">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners.BottomLeft" parent="ShapeAppearanceOverlay_card_custom_corners">
+        <item name="cornerSizeBottomLeft">16dp</item>
+    </style>
+
+</resources>

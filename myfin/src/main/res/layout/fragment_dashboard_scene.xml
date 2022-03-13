@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/medium_padding"
+    tools:context=".dashboard.DashboardScene">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCard.TopRight"
+        android:id="@+id/general_info_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium_padding">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/balance_in_cash_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_in_cash"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/large_padding"
+                android:layout_marginEnd="@dimen/large_padding"
+                android:id="@+id/balance_in_cash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:gravity="center"
+                android:padding="@dimen/medium_padding"
+                android:background="@drawable/round_back"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/balance_in_cash_txt" />
+
+            <TextView
+                android:id="@+id/total_expenses_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:layout_marginEnd="@dimen/large_padding"
+                android:text="@string/total_expenses"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/balance_in_cash" />
+
+            <TextView
+                android:id="@+id/total_expenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/large_padding"
+                android:text="0.00"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/total_expenses_txt" />
+
+            <TextView
+                android:id="@+id/total_income_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:layout_marginStart="@dimen/large_padding"
+                android:text="@string/total_income"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/balance_in_cash" />
+
+            <TextView
+                android:id="@+id/total_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_padding"
+                android:text="0.00"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/total_income_txt" />
+
+            <TextView
+                android:layout_marginTop="@dimen/medium_padding"
+                android:id="@+id/number_of_accounts_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/large_padding"
+                android:text="@string/accounts_count"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/total_expenses" />
+
+            <TextView
+                android:id="@+id/number_of_accounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/large_padding"
+                android:text="0 Nos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/number_of_accounts_txt" />
+
+            <TextView
+                android:layout_marginTop="@dimen/medium_padding"
+                android:id="@+id/number_of_transactions_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_padding"
+                android:text="@string/transactions_count"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/total_income" />
+
+            <TextView
+                android:id="@+id/number_of_transactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_padding"
+                android:text="0 Nos"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/vg"
+                app:layout_constraintTop_toBottomOf="@+id/number_of_transactions_txt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCard.BottomRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/medium_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_info_card">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/medium_padding">
+
+                <TextView
+                    android:id="@+id/general_actions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/actions"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/center_gl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/center_gl"
+                    app:layout_constraintTop_toBottomOf="@+id/general_actions"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:text="@string/create_account"
+                    android:id="@+id/btn_create_account"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/center_gl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/general_actions"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/add_transaction"
+                    android:id="@+id/btn_create_transactions"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/center_gl"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_create_account"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:text="@string/accounts"
+                    android:id="@+id/btn_accounts"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/center_gl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_create_transactions"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/transactions"
+                    android:id="@+id/btn_transactions"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/center_gl"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_accounts"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:text="@string/trial_balance"
+                    android:id="@+id/btn_trial_balance"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/center_gl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_transactions"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/monthly_report"
+                    android:id="@+id/btn_monthly_report"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/center_gl"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_trial_balance"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:text="@string/daily_report"
+                    android:id="@+id/btn_daily_report"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/center_gl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_monthly_report"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/cash_flow"
+                    android:id="@+id/btn_cash_flow"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/center_gl"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_daily_report"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:text="@string/top_ten"
+                    android:id="@+id/btn_top_ten"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_margin="@dimen/medium_padding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/center_gl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cash_flow"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="@dimen/action_button_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/latest_ten"
+                    android:id="@+id/btn_latest_ten"/>
+
+
+                <View
+                    android:id="@+id/animation_pivot"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

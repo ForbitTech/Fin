@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+
+
+    <fade android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="700"
+        android:fadingMode="fade_out">
+        <targets>
+            <target android:targetId="@+id/root"/>
+        </targets>
+    </fade>
+
+    <changeBounds
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="300">
+        <targets>
+            <target android:targetId="@+id/btn_create_account"/>
+        </targets>
+    </changeBounds>
+
+
+
+
+</transitionSet>
